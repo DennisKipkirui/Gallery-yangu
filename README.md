@@ -47,7 +47,7 @@ Gallery yangu is a personal gallery application that displays photos for others 
 The modal displaying image details appears and disappears immediately making it appear as if it is not present.
 
 ## Contact Information
-If you need clarification on any aspect, feel free to reach me via email at audreynjiraini@gmail.com
+If you need clarification on any aspect, feel free to reach me via email at kipkiruimutai@gmail.com
 
 ### License
 MIT License [MIT](license.txt)
