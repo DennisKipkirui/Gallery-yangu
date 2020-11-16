@@ -81,7 +81,7 @@ class Image(models.Model):
     image_name = models.CharField(max_length = 30)
     image_description = models.TextField()
     location = models.ForeignKey(Location)
-    category = models.ForeignKey(Category)
+    category = models.ManyToManyField(Category)
     
     
     def save_image(self):
@@ -114,6 +114,13 @@ class Image(models.Model):
         '''
         image = cls.objects.get(id = id)
         return image
+
+
+    @classmethod
+    def filter_location(cls, id):
+       images = Image.objects.filter(location_id=id)
+       return images  
+
         
         
     @classmethod
