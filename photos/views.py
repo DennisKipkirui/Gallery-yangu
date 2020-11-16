@@ -26,8 +26,17 @@ def search_results(request):
         return render(request, 'search.html', {"message":message})
     
     
-def location(request,location):
-    selected_location = Location.objects.get(id = location)
-    images = Image.objects.filter(location = selected_location.id)
+# def location(request,location):
+#     selected_location = Location.objects.get(id = location)
+#     images = Image.objects.filter(location = selected_location.id)
     
-    return render(request, 'location.html', {"location":selected_location,"images":images})
+#     return render(request, 'location.html', {"location":selected_location,"images":images})
+
+
+def filter_by_location(request,location_id):
+    """
+    Function that filters images by location
+    """
+    images = Image.filter_location(id=location_id)
+    print(id,'it works')
+    return render (request, 'location.html', {"images":images})
