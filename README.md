@@ -21,7 +21,7 @@ Gallery yangu is a personal gallery application that displays photos for others 
 * Python version 3
 * pip
 * Django
-* Django-bootstrap3
+* Django-bootstrap4
 * Heroku
 * Gunicorn
 * Internet connection
